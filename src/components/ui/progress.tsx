@@ -19,8 +19,12 @@ function Progress({
 =======
         "relative h-3 w-full overflow-hidden rounded-full",
         // Modified classes
+<<<<<<< HEAD
         "border bg-transparent",
 >>>>>>> origin/main
+=======
+        "border bg-white",
+>>>>>>> 0195e16b8ebd391dc510764c59f1d2dda62bbb25
         className
       )}
       {...props}
