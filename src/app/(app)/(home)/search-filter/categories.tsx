@@ -1,14 +1,14 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { CustomCategory } from "../types";
-import { CaetgorDropdown } from "./category-dropdown";
-import { cn } from "@/lib/utils";
-import { ListFilterIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { CategoriesGetManyOutput } from "@/module/categories/type";
+import { ListFilterIcon } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { CategoriesSidebar } from "./categories-sidebar";
+import { CaetgorDropdown } from "./category-dropdown";
 
 interface Props {
-    data: CustomCategory[];
+    data: CategoriesGetManyOutput;
 };
 
 export const Categories = ({
@@ -61,8 +61,7 @@ export const Categories = ({
 
             <CategoriesSidebar
                 open={isSidebarOpen}
-                onOpenChange={setIsSiderbarOpen}
-                data={data} />
+                onOpenChange={setIsSiderbarOpen} />
 
             <div
                 ref={measureRef}
