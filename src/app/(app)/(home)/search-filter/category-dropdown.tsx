@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { CategoriesGetManyOutput } from "@/module/categories/type";
+import { CategoriesGetManyOutput } from "@/module/categories/types";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { SubCategoryMenu } from "./subcategory-menu";

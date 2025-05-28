@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { CategoriesGetManyOutput } from "@/module/categories/type";
+import { CategoriesGetManyOutput } from "@/module/categories/types";
 import { ListFilterIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { CategoriesSidebar } from "./categories-sidebar";
@@ -25,7 +25,7 @@ export const Categories = ({
     const activeCategory = "All";
 
     const activeCategoryIndex = data.findIndex((cat) => cat.slug === activeCategory);
-    const isActiveCategoryHiddne = activeCategoryIndex >= visibleCount && activeCategoryIndex !== -1;
+    const isActiveCategoryHidden = activeCategoryIndex >= visibleCount && activeCategoryIndex !== -1;
 
     useEffect(() => {
         const calculateVisible = () => {
@@ -94,7 +94,7 @@ export const Categories = ({
                 <div ref={viewAllRef} className="shrink-0">
                     <Button className={cn(
                         "h-11 px-4 bg-transparent border-transparent rounded-full hover:bg-white hover:border-primary text-black",
-                        isActiveCategoryHiddne && !isAnyHovered && "bg-white border-primary"
+                        isActiveCategoryHidden && !isAnyHovered && "bg-white border-primary"
                     )}
                         onClick={() => setIsSiderbarOpen(true)}>
                         View All
