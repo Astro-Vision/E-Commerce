@@ -1,1 +1,0 @@
-export const AUTH_COOKIE = "funroad-payload-cookie";
