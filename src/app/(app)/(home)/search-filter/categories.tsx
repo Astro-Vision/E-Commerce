@@ -22,7 +22,7 @@ export const Categories = ({
     const [isAnyHovered, setIsAnyHovered] = useState(false);
     const [isSidebarOpen, setIsSiderbarOpen] = useState(false);
 
-    const activeCategory = "all";
+    const activeCategory = "All";
 
     const activeCategoryIndex = data.findIndex((cat) => cat.slug === activeCategory);
     const isActiveCategoryHidden = activeCategoryIndex >= visibleCount && activeCategoryIndex !== -1;

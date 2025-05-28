@@ -4,11 +4,11 @@ import { useQuery } from "@tanstack/react-query";
 
 export default function Home() {
     const trpc = useTRPC();
-    const { data } = useQuery(trpc.auth.session.queryOptions());
+    const categories = useQuery(trpc.categories.getMany.queryOptions());
 
     return (
         <div>
-            {JSON.stringify(data?.user, null, 2)}
+            {/* {JSON.stringify(categories.data, null, 2)} */}
         </div>
     )
 }

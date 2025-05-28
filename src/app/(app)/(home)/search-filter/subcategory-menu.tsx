@@ -28,7 +28,7 @@ export const SubCategoryMenu = ({
                 style={{ backgroundColor }}
                 className="w-60 text-black rounded-md overflow-hidden border shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] -translate-x-[2px] -translate-y-[2px]">
                 <div>
-                    {(category.subcategories as Category[])?.map((subCategory) => (
+                    {category.subcategories?.map((subCategory) => (
                         <Link
                             key={subCategory.slug}
                             href={`/${category.slug}/${subCategory.slug}`}
