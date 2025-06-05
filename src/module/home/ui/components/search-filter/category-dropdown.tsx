@@ -20,7 +20,6 @@ export const CaetgorDropdown = ({
 }: Props) => {
     const [isOpen, setIsOpen] = useState(false);
     const downRef = useRef<HTMLDivElement>(null);
-    const { getDropdownPosition } = useDropDownPosition(downRef);
 
     const onMouseEnter = () => {
         if (category.subcategories) {
@@ -31,8 +30,6 @@ export const CaetgorDropdown = ({
     const onMouseLeave = () => {
         setIsOpen(false);
     };
-
-    const dropDownPosition = getDropdownPosition();
 
     // const toggleDropDown = () => {
     //     if (category.subcategories?.docs?.length) {
@@ -71,8 +68,7 @@ export const CaetgorDropdown = ({
             </div>
             <SubCategoryMenu
                 category={category}
-                isOpen={isOpen}
-                position={dropDownPosition} />
+                isOpen={isOpen} />
         </div>
     )
 }
