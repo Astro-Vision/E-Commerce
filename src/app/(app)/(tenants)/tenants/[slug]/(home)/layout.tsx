@@ -1,4 +1,3 @@
-import { DEFAULT_LIMIT } from "@/constants";
 import { Footer } from "@/module/tenants/ui/components/footer";
 import { Navbar, NavbarSkeleton } from "@/module/tenants/ui/components/navbar";
 import { getQueryClient, trpc } from "@/trpc/server";
