@@ -4,7 +4,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 import { ReviewSidebar } from "../components/review-sidebar";
-// 3:46
+
 interface Props {
     productId: string;
 };
