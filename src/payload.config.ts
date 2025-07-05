@@ -15,6 +15,7 @@ import { Products } from './collections/Products'
 import { Tags } from './collections/Tags'
 import { Tenatnts } from './collections/Tenants'
 import { Orders } from './collections/Order'
+import { Reviews } from './collections/Review'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -26,7 +27,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Categories, Products, Tags, Tenatnts, Orders],
+  collections: [Users, Media, Categories, Products, Tags, Tenatnts, Orders, Reviews],
   cookiePrefix: 'funroad',
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
