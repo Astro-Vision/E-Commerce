@@ -5,7 +5,7 @@ import { Progress } from "@/components/ui/progress";
 import { formatCurrency, generateTenantURL } from "@/lib/utils";
 import { useTRPC } from "@/trpc/client";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { LinkIcon, StarIcon } from "lucide-react";
+import { CheckIcon, LinkIcon, StarIcon } from "lucide-react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
