@@ -124,7 +124,7 @@ export const productRouter = createTRPCRouter({
         )
         .query(async ({ ctx, input }) => {
             const where: Where = {
-                isArchivede: {
+                isArchived: {
                     not_equals: true
                 }
             };
