@@ -1,5 +1,5 @@
 import { getPayload } from "payload";
-import config  from "@payload-config";
+import config from "@payload-config";
 import { stripe } from "./lib/stripe";
 
 const categories = [
@@ -159,8 +159,10 @@ const seed = async () => {
             password: "demo",
             roles: ["super-admin"],
             username: "admin",
-        }
-    })
+            tenants: adminTenant ? [{ tenant: adminTenant.id }] : [],
+        },
+    });
+
 
     for (const category of categories) {
         const parentCategory = await payload.create({
@@ -179,7 +181,7 @@ const seed = async () => {
                 data: {
                     name: subCategory.name,
                     slug: subCategory.slug,
-                    parent: parentCategory.id  ,
+                    parent: parentCategory.id,
                 }
             })
         }

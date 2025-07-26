@@ -5,7 +5,6 @@ import { CategoriesGetManyOutput } from "@/module/categories/types";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { SubCategoryMenu } from "./subcategory-menu";
-import { useDropDownPosition } from "./use-dropdown-position";
 
 interface Props {
     category: CategoriesGetManyOutput[1];
