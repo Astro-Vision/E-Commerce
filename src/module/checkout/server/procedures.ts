@@ -77,7 +77,7 @@ export const checkoutRouter = createTRPCRouter({
                             }
                         },
                         {
-                            isArchivede: {
+                            isArchived: {
                                 not_equals: true
                             }
                         }
