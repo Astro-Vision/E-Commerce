@@ -1,11 +1,10 @@
-import { fromTheme } from "tailwind-merge";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import {
     Sheet,
     SheetContent,
     SheetHeader,
     SheetTitle,
 } from "@/components/ui/sheet";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 
 interface NavbarItem {

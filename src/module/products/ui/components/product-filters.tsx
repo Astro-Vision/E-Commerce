@@ -1,9 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronRightIcon, Key, } from "lucide-react";
+import { ChevronDown, ChevronRightIcon } from "lucide-react";
 import { useState } from "react";
-import { PriceFilter } from "./price-filter";
 import { useProductFilter } from "../../hooks/use-product-fillter";
+import { PriceFilter } from "./price-filter";
 import { TagsFilter } from "./tags-filter";
 
 interface ProductFilterProps {
