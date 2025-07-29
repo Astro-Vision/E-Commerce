@@ -7,7 +7,7 @@ import { useTRPC } from "@/trpc/client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
-import { Form, useForm } from "react-hook-form";
+import { Form, FormProvider, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
 
@@ -75,7 +75,7 @@ export const ReviewForm = ({ productId, initialData }: Props) => {
     };
 
     return (
-        <Form {...form}>
+        <FormProvider {...form}>
             <form
                 className="flex flex-col gap-y-4"
                 onSubmit={form.handleSubmit(onSubmit)}>
@@ -130,7 +130,7 @@ export const ReviewForm = ({ productId, initialData }: Props) => {
                     Edit
                 </Button>
             )}
-        </Form>
+        </FormProvider>
     )
 };
 
