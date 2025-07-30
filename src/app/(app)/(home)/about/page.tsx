@@ -1,5 +1,7 @@
 import { RocketIcon, ShoppingCartIcon, UsersIcon } from "lucide-react";
 
+export const dynamic = "force-dynamic";
+
 const Page = () => {
     return (
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16">
@@ -21,9 +23,7 @@ const Page = () => {
                     <div>
                         <h2 className="text-2xl font-semibold mb-4 text-[#FFB347]">Our Mission</h2>
                         <p className="text-muted-foreground text-lg leading-relaxed">
-                            We're democratizing e-commerce by creating a fair, transparent marketplace where
-                            vendors of all sizes can thrive. Our platform combines cutting-edge technology
-                            with human-centric design to empower sellers and delight buyers.
+                            We're democratizing e-commerce by creating a fair, transparent marketplace where vendors of all sizes can thrive. Our platform combines cutting-edge technology with human-centric design to empower sellers and delight buyers.
                         </p>
                     </div>
                 </div>

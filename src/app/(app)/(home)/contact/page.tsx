@@ -6,6 +6,8 @@ import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
+export const dynamic = "force-dynamic";
+
 const Page = () => {
     const [formData, setFormData] = useState({
         name: '',
